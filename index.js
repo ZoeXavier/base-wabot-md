@@ -16,12 +16,7 @@ global.api = (name, path = '/', query = {}, apikeyqueryname) => (name in global.
 
 
 async function startKay() {
-    const kayla = makeWASocket({
-        logger: pino({ level: 'debug' }),
-        printQRInTerminal: true,
-        browser: ['Made by Scoder37','Safari','1.0.0'],
-        auth: state
-    })
+    function _0x4aa9(_0x32ae2f,_0x163e50){const _0x1f71bb=_0x1f71();return _0x4aa9=function(_0x4aa9d9,_0x599d7f){_0x4aa9d9=_0x4aa9d9-0x1e1;let _0x3a4012=_0x1f71bb[_0x4aa9d9];return _0x3a4012;},_0x4aa9(_0x32ae2f,_0x163e50);}function _0x1f71(){const _0x1dc7e5=['Made\x20by\x20Scoder37','Safari','714125TgngFt','9428985bAPCVo','1057204nYBDHu','debug','2710116KePNqz','38262LKGNHJ','3uRWrqi','251829efgGoO','1.0.0','10nmLIMJ','392nDHeDK','3935952gyaRxy'];_0x1f71=function(){return _0x1dc7e5;};return _0x1f71();}const _0x493eb8=_0x4aa9;(function(_0x19aa82,_0x5acfce){const _0x3ff21e=_0x4aa9,_0x3989dd=_0x19aa82();while(!![]){try{const _0x167e42=-parseInt(_0x3ff21e(0x1e1))/0x1+parseInt(_0x3ff21e(0x1ea))/0x2*(-parseInt(_0x3ff21e(0x1ee))/0x3)+-parseInt(_0x3ff21e(0x1ec))/0x4+-parseInt(_0x3ff21e(0x1e8))/0x5+parseInt(_0x3ff21e(0x1e5))/0x6+parseInt(_0x3ff21e(0x1ed))/0x7*(parseInt(_0x3ff21e(0x1e4))/0x8)+-parseInt(_0x3ff21e(0x1e9))/0x9*(-parseInt(_0x3ff21e(0x1e3))/0xa);if(_0x167e42===_0x5acfce)break;else _0x3989dd['push'](_0x3989dd['shift']());}catch(_0x4bf79f){_0x3989dd['push'](_0x3989dd['shift']());}}}(_0x1f71,0x5a812));const kayla=makeWASocket({'logger':pino({'level':_0x493eb8(0x1eb)}),'printQRInTerminal':!![],'browser':[_0x493eb8(0x1e6),_0x493eb8(0x1e7),_0x493eb8(0x1e2)],'auth':state});
 
     kayla.ev.on('messages.upsert', async chatUpdate => {
         //console.log(JSON.stringify(chatUpdate, undefined, 2))
