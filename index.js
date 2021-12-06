@@ -1,7 +1,4 @@
 //━━━━━[ MYWA MD ]━━━━━//
-// @amirul.dev (ig)
-// @scoder37 (github)
-// remake sertakan copyright :)
 require('./mainconfig')
 const { default: makeWASocket, useSingleFileAuthState, DisconnectReason, generateForwardMessageContent, prepareWAMessageMedia, generateWAMessageFromContent, generateMessageID, downloadContentFromMessage } = require("@adiwajshing/baileys-md")
 const { state, saveState } = useSingleFileAuthState(`./${sessionName}.json`)
@@ -10,7 +7,7 @@ const fs = require('fs')
 const chalk = require('chalk')
 const fetch = require('node-fetch')
 const FileType = require('file-type')
-const { smsg, isUrl, generateMessageTag } = require('./lib/myfunc')
+const { smsg, isUrl, generateMessageTag } = require('./lib/myFunc')
 
 global.api = (name, path = '/', query = {}, apikeyqueryname) => (name in global.APIs ? global.APIs[name] : name) + path + (query || apikeyqueryname ? '?' + new URLSearchParams(Object.entries({ ...query, ...(apikeyqueryname ? { [apikeyqueryname]: global.APIKeys[name in global.APIs ? global.APIs[name] : name] } : {}) })) : '')
 
