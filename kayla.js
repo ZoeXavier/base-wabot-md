@@ -1,8 +1,4 @@
 //━━━━━[ MYWA MD ]━━━━━//
-// @amirul.dev (ig)
-// @scoder37 (github)
-// remake sertakan copyright :)
-
 require('./mainconfig')
 const { default: makeWASocket, BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, downloadContentFromMessage, downloadHistory, proto, getMessage, generateWAMessageContent, prepareWAMessageMedia } = require('@adiwajshing/baileys-md')
 const fs = require('fs')
@@ -16,7 +12,7 @@ const os = require('os')
 const speed = require('performance-now')
 const { performance } = require('perf_hooks')
 const { pinterest, wallpaper, wikimedia, porno, hentai, quotesAnime } = require('./lib/scraper')
-const { smsg, getGroupAdmins, formatp, tanggal, formatDate, getTime, isUrl, sleep, clockString, runtime, fetchJson, getBuffer, jsonformat, delay, format, logic, generateProfilePicture, parseMention, getRandom } = require('./lib/myfunc')
+const { smsg, getGroupAdmins, formatp, tanggal, formatDate, getTime, isUrl, sleep, clockString, runtime, fetchJson, getBuffer, jsonformat, delay, format, logic, generateProfilePicture, parseMention, getRandom } = require('./lib/myFunc')
 const database = require('./database.json')
 
 
